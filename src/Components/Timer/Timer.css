@@ -1,0 +1,43 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digits {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+  font-size: 5vw; /* Ukuran font responsif berbasis lebar viewport */
+}
+
+.mili-sec {
+  color: #e42a2a;
+}
+
+/* Media queries untuk perangkat kecil */
+@media (max-width: 600px) {
+  .digits {
+    font-size: 8vw; /* Menyesuaikan ukuran font untuk layar kecil */
+  }
+}
+
+/* Media queries untuk perangkat besar */
+@media (min-width: 1200px) {
+  .digits {
+    font-size: 3rem; /* Ukuran font tetap untuk layar besar */
+  }
+}

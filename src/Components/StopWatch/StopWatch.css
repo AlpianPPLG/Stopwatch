@@ -1,0 +1,82 @@
+.stop-watch {
+  height: 85vh;
+  width: 23vw;
+  background-color: #0d0c1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-toggle-btn {
+  margin: 3rem 0;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #e42a2a;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #e42a2a;
+  color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #f5f5f5;
+  color: #e42a2a;
+}
+
+.Control-Buttons {
+  margin: 3rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 14px;
+  margin: 0px 6px;
+  display: flex;
+  border: 2px solid #e42a2a;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: #e42a2a; /* Set the initial background color for .btn */
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.btn:hover {
+  background-color: #f5f5f5; /* Change the background color on hover */
+  color: #e42a2a; /* Change the text color on hover */
+}
+
+.btn-one {
+  background-color: #e42a2a; /* This can be retained or omitted since .btn already has this */
+}
